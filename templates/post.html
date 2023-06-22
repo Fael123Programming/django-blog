@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+<div class="header">
+  <h2>Rafael's Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h1>{{post.title}}</h1>
+        <h5>{{post.timestamp}}</h5>
+        <p>{{post.body}}</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
